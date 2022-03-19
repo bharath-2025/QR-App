@@ -4,12 +4,15 @@
 }
 
 body{
+    width:100vw;
+    height:100vh;
     color:white;
     overflow:hidden;
     background-image: url('background2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #options{
@@ -117,7 +120,7 @@ body{
     height:40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -155,7 +158,7 @@ body{
     position:absolute;
     top:15%;
     width:100%;
-    height:80%;
+    height:90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,26 +218,51 @@ body{
 /* Adding Media Queries for the mobile view */
 
 @media only screen and (max-width:600px){
-    /* Adjustment for the Qr-generator section */
-    #outer{
-        width:40vw;
-        height:40vw;
+
+    #main{
+        width:200%;
+        height:100vh;
+        position:relative;
+        top:0px;
+        left:0px;
     }
 
+    #qr-generator{
+        width:100vw;
+        height:100vh;
+    }
+
+    #qr-scanner{
+       width:100vw;
+       height:100vh;
+    }
+   
+    /* Adjustment for the Qr-generator section */
+    #outer{
+        width:35vh;
+        height:35vh;
+    }
+
+    
+
     /* Adjustments for the Qr Scanner Section */
+    #qr-scanner{
+        border:none;
+    }
+
     #scanner video{
-        width:40vw;
-        height:30vw;
+        width:35vh;
+        height:35vh;
     }
 
     #startbtn{
-        width:40vw;
-        height:30vw;
+        width:35vh;
+        height:35vh;
     }
 
     #startbtn img{
-        width:40vw;
-        height:30vw;
+        width:35vh;
+        height:35vh;
     }
 }
 
