@@ -35,6 +35,7 @@ body{
     cursor: pointer;
     box-shadow: -2px -1px 3px 1px white;
     border-radius: 5px;
+    font-size:2.5vh;
 }
 
 #main{
@@ -116,7 +117,7 @@ body{
     height:40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -208,6 +209,33 @@ body{
     font-size:2vh;
     font-weight: bold;
     cursor:pointer;
+}
+
+
+/* Adding Media Queries for the mobile view */
+
+@media only screen and (max-width:600px){
+    /* Adjustment for the Qr-generator section */
+    #outer{
+        width:40vw;
+        height:40vw;
+    }
+
+    /* Adjustments for the Qr Scanner Section */
+    #scanner video{
+        width:40vw;
+        height:30vw;
+    }
+
+    #startbtn{
+        width:40vw;
+        height:30vw;
+    }
+
+    #startbtn img{
+        width:40vw;
+        height:30vw;
+    }
 }
 
 
