@@ -82,8 +82,15 @@
 <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <script type="text/javascript">
         $('#btn2').click(function(){
+            $('#main').animate({'left':'-100%'});
             $('#btn1').removeClass('active');
             $('#btn2').addClass('active');
+        });
+
+        $('#btn1').click(function(){
+            $('#main').animate({'left':'0%'});
+            $('#btn2').removeClass('active');
+            $('#btn1').addClass('active');
         });
 
         $('#stopbtn').click(function(){
