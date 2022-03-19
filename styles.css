@@ -235,6 +235,8 @@ body{
     #qr-scanner{
        width:100vw;
        height:100vh;
+       border:none;
+       display: hidden;
     }
    
     /* Adjustment for the Qr-generator section */
@@ -246,10 +248,7 @@ body{
     
 
     /* Adjustments for the Qr Scanner Section */
-    #qr-scanner{
-        border:none;
-    }
-
+    
     #scanner video{
         width:35vh;
         height:35vh;
