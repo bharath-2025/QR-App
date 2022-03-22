@@ -245,6 +245,9 @@ body{
    
     /* Adjustment for the Qr-generator section */
     
+    #outer img{
+        z-index: -1;
+    }
     
 
     /* Adjustments for the Qr Scanner Section */
